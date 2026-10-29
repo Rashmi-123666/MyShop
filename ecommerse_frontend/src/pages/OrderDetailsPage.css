@@ -1,0 +1,237 @@
+
+.order-details-page {
+    min-height: 100vh;
+    padding: 40px 20px 60px;
+    background: #f3f6fb;
+    color: #172554;
+}
+
+.order-details-container {
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.back-to-orders {
+    display: inline-block;
+    margin-bottom: 24px;
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.back-to-orders:hover {
+    text-decoration: underline;
+}
+
+.order-details-header {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.order-eyebrow {
+    color: #2563eb;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.order-details-header h1 {
+    margin: 0 0 8px;
+    color: #172554;
+    font-size: 34px;
+}
+
+.order-number {
+    margin: 0 0 16px;
+    color: #64748b;
+}
+
+.order-meta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    color: #64748b;
+    font-size: 14px;
+}
+
+.order-status {
+    padding: 6px 12px;
+    border-radius: 20px;
+    background: #dbeafe;
+    color: #1d4ed8;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.order-details-card {
+    padding: 28px;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 18px;
+    box-shadow: 0 12px 35px rgba(15, 23, 42, 0.07);
+}
+
+.order-details-card h2 {
+    margin: 0 0 20px;
+    color: #172554;
+    font-size: 21px;
+}
+
+.order-items {
+    display: flex;
+    flex-direction: column;
+}
+
+.order-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 18px 0;
+    border-bottom: 1px solid #e8edf5;
+}
+
+.order-item:first-child {
+    padding-top: 0;
+}
+
+.order-item-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 58px;
+    height: 58px;
+    border-radius: 12px;
+    background: #eff6ff;
+    font-size: 25px;
+}
+
+.order-item-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.order-item-info h3 {
+    margin: 0 0 7px;
+    color: #172554;
+    font-size: 16px;
+}
+
+.order-item-info p {
+    margin: 4px 0;
+    color: #64748b;
+    font-size: 14px;
+}
+
+.order-item-subtotal {
+    color: #172554;
+    white-space: nowrap;
+}
+
+.order-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding-top: 22px;
+    margin-top: 8px;
+    font-size: 18px;
+}
+
+.order-total strong {
+    color: #1d4ed8;
+    font-size: 23px;
+}
+
+.order-details-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+.continue-shopping {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 9px;
+    background: #2563eb;
+    color: #ffffff;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.continue-shopping:hover {
+    background: #1d4ed8;
+    transform: translateY(-1px);
+}
+
+.order-details-message {
+    max-width: 850px;
+    margin: 50px auto;
+    padding: 24px;
+    border-radius: 12px;
+    background: #ffffff;
+    color: #172554;
+    text-align: center;
+}
+
+.error-message {
+    color: #b91c1c;
+}
+
+@media (max-width: 600px) {
+    .order-details-page {
+        padding: 25px 14px 40px;
+    }
+
+    .order-details-header h1 {
+        font-size: 28px;
+    }
+
+    .order-details-card {
+        padding: 20px 16px;
+    }
+
+    .order-item {
+        gap: 10px;
+    }
+
+    .order-item-icon {
+        width: 44px;
+        height: 44px;
+        font-size: 20px;
+    }
+
+    .order-item-info h3 {
+        font-size: 14px;
+    }
+
+    .order-item-subtotal {
+        font-size: 13px;
+    }
+
+    .order-total strong {
+        font-size: 20px;
+    }
+}
+
+.order-item-image {
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+    overflow: hidden;
+    border-radius: 12px;
+    background: #f1f5f9;
+    border: 1px solid #e2e8f0;
+}
+
+.order-item-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
